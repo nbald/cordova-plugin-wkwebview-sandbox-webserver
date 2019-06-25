@@ -40,7 +40,8 @@
 
 - (void) pluginInitialize {
     self.server = [[GCDWebServer alloc]init];
-    [self.server addGETHandlerForBasePath:@"/" directoryPath:NSHomeDirectory() indexFilename:nil cacheAge:3600 allowRangeRequests:YES];
+    [self.server addGETHandlerForBasePath:@"/" directoryPath:[NSHomeDirectory() stringByAppendingString:@"/Library/NoCloud/app/www"] indexFilename:nil cacheAge:3600 allowRangeRequests:YES];
+
     [self.server startWithPort:49086 bonjourName:nil];
 
 }

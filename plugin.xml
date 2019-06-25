@@ -21,7 +21,7 @@
     <name>CordovaWKWebviewSandboxWebserver</name>
     <description>Cordova Wkwebview Sandbox Webserver Plugin</description>
     <keywords>cordova,local web server,sandbox,wkwebview</keywords>
-    <repo>git+https://github.com/bigeyex/cordova-plugin-wkwebview-sandbox-webserver.git</repo>
+    <repo>git+https://github.com/nbald/cordova-plugin-wkwebview-sandbox-webserver.git</repo>
 
     <engines>
         <engine name="cordova-ios" version=">=4.1.0" />
@@ -39,8 +39,8 @@
 			<access origin="http://localhost" />
       <allow-navigation href="http://localhost:*/*" />
         </config-file>
-		
-        
+
+
 	    <header-file src="src/ios/CDVWKWebviewSandboxWebServer.h" />
 	    <source-file src="src/ios/CDVWKWebviewSandboxWebServer.m" />
 
